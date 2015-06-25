@@ -1,0 +1,146 @@
+.bg { 
+    background-size: 100% 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.notice {
+font-size: 1.5em;
+ color:green;
+ text-shadow: 2px 2px 2px #000000;
+ }
+
+h1{
+ color:white;
+ text-shadow: 2px 2px 2px #000000;
+}
+
+body {
+
+background-image:url(background.jpg);
+background-repeat: repeat-y;
+margin:0px; 
+padding:20px;
+text-align: center;
+}
+
+@font-face {
+    font-family: 'Strange';
+    src: url('blog/app/assets/Strange.ttf'); 
+}
+
+textenhance {
+color:white;
+text-shadow: 2px 2px 4px #000000;
+}
+
+.headline {
+ background-color: rgba(0,0,0,0.14);
+    border: none;
+    width:50%;
+color: white;
+}
+
+
+.inputbox {
+ background-color: rgba(0,0,0,0.14);
+    border: none;
+color: white;
+}
+
+        
+.hidden { 
+    display: none
+}
+
+.a:link {
+ color: #FFFFFF;   
+ opacity: 0.5;
+}
+
+.a:visited {
+ color: #FFFFFF;  
+ opacity: 0.5;
+}
+
+.a:hover {
+ color: #FFFFFF; 
+ opacity: 1;  
+}
+
+.a:active {
+ color: #FFFFFF;   
+}
+
+table{
+    width:70%; 
+    color:white;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 5px .5em 5px .4em;
+    width:100%;
+    height:50px;
+    position: center;
+    text-align: center;
+    border: 1px solid rgba(255,255,255, .1);
+}
+
+ td{
+    color:white;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 5px .5em 5px .4em;
+    border: 1px solid rgba(255,255,255, .1);
+}
+
+th {
+}
+
+
+#back {
+ background-image: url(back.png);  
+    display:block;
+    height:50px;
+    width:50px;
+}
+
+
+#edit {
+ background-image: url(edit.png);  
+    display:block;
+    height:50px;
+    width:50px;
+}
+
+#show {
+ background-image: url(show.png);  
+    display:block;
+    height:50px;
+    width:50px;
+}
+
+.profile {
+ background-image: url(profile.png);  
+    display:inline-block;
+    height:100px;
+    width:100px;
+}
+.admin {
+ background-image: url(admin.png);  
+    display:inline-block;
+    height:100px;
+    width:100px;
+}
+.create {
+ background-image: url(Pinsel.png);  
+    display:inline-block;
+    height:100px;
+    width:100px;
+}
+
+#destroy {
+ background-image: url(destroy.png);  
+    display:block;
+    height:50px;
+    width:50px;
+}

@@ -1,0 +1,7 @@
+class Book < ActiveRecord::Base
+ has_many :copies, dependent: :destroy
+ validates :author, presence: true
+ validates :publisher, presence: true
+ validates :title, presence: true
+ validates :genre, presence: true
+end

@@ -1,0 +1,14 @@
+<h1 style="color:white">Add book</h1>
+
+<% form_for Book.create do |f| %>
+	Title <%= f.text_field :title %></br>
+	Author <%= f.text_field :author %></br>
+	Publisher <%= f.text_field :publisher %></br>
+	Genre <%= f.text_field :genre %></br>
+	Publisher <%= f.text_field :publisher %></br>
+<%= f.submit %>
+<% end %>
+
+<%= link_to 'Customers', customers_path ,{ :style=>'color:#FFFFFF', :class=>'a'} %>
+<%= link_to 'Borrowings', borrowings_path ,{ :style=>'color:#FFFFFF', :class=>'a'} %>
+

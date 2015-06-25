@@ -1,0 +1,10 @@
+<h1 style="color:white">Add book</h1>
+
+<%= form_for @book do |f| %>
+<%= f.text_field :title , :class=>'inputbox', placeholder: 'Enter title'%></br></br>
+<%= f.text_field :author, :class=>'inputbox', placeholder: 'Enter Author' %></br>
+<%= f.text_field :publisher, :class=>'inputbox', placeholder: 'Enter Publisher' %></br>
+<%= f.text_field :genre, :class=>'inputbox', placeholder: 'Enter Genre' %></br>
+<%= f.submit "Create" %>
+
+<% end %>

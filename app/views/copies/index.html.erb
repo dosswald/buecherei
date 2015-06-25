@@ -1,0 +1,23 @@
+<h1>Copies</h1>
+
+
+<table style="position:center">
+ <tr>	
+  <th>ID</th>
+  <th>Book-ID</th>
+  <th>Quality</th>
+ </tr>
+
+<% @copies.each do |copy| %>
+ <tr>
+  <td><%= copy.id %></td>
+  <td><%= copy.book_id %></td>
+  <td><%= copy.quality %></td>
+ </tr>
+<% end %>
+</table></br></br>
+
+
+<%= link_to 'Customers', customers_path ,{:class=>'a'} %></br>
+<%= link_to 'Borrowings', borrowings_path ,{:class=>'a'} %></br>
+<%= link_to 'Books', books_path ,{:class=>'a'} %></br>

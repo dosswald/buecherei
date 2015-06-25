@@ -1,0 +1,24 @@
+<h1 style="color:white">Borrowings</h1>
+<br>
+<br>
+ <table>
+  <tr>	
+   <th>ID</th>
+   <th>Copy-id</th>
+   <th>Date of issue</th>	  
+   <th>Date of return</th>
+   <th>View Copy</th>
+  </tr>
+
+ <% Borrowing.find_each do |borrowing| %>
+   <tr>
+    <td><%= borrowing.id %></td>
+    <td><%= borrowing.copy_id %></td>
+    <td><%= borrowing.date_of_issue %></td>
+    <td><%= borrowing.date_of_return %></td>
+    <td><%= link_to 'Copy', borrowing_copies_path(borrowing) , :class=>'a' %></td>
+   </tr>
+<% end %>
+</table>
+<%= link_to 'Customers', customers_path ,{:class=>'a'} %>
+<%= link_to 'Books', books_path ,{:class=>'a'} %>

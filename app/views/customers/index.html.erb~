@@ -1,0 +1,24 @@
+<h1>Customers</h1>
+<br>
+<br>
+ <table>
+  <tr>	
+   <th>ID</th>
+   <th>First name</th>
+   <th>Last name</th>	  
+   <th>Birthday</th>
+   <th>Borrowings</th>
+  </tr>
+<% Customer.find_each do |customer| %>
+   <tr>
+    <td><%= customer.id %></td>
+    <td><%= customer.first_name %></td>
+    <td><%= customer.last_name %></td>
+    <td><%= customer.birth_date %></td>
+    <td><%= link_to 'Borrowings', borrowings_path,{:class=>'a'} %> </td>
+   </tr>
+<% end %>
+</table>
+
+<%= link_to 'Books', books_path ,{:class=>'a'} %>
+<%= link_to 'Borrowings', borrowings_path ,{ :style=>'color:#FFFFFF', :class=>'a'} %>

@@ -1,0 +1,21 @@
+Rails.application.routes.draw do
+  get 'copies/index'
+  get 'borrowings/index'
+  get 'books/index'
+  get 'copies/index'
+  get'books/_form'
+root 'books#index'
+
+resources :customers do
+  resources :borrowings
+end
+resources :copies
+
+resources :borrowings do
+  resources :copies
+end
+
+resources :books do
+  resources :copies
+end
+end

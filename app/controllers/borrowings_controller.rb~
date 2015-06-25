@@ -1,0 +1,10 @@
+class BorrowingsController < ApplicationController
+  def index
+    if params['id']
+	@borrowings = Borrowing.where(customer_id: params['id']).first
+    else
+        @borrowings = Borrowing.where(customer_id: params['id']).all
+
+    end
+  end
+end
