@@ -21,7 +21,6 @@ body {
 
 background-image:url(background.jpg);
 background-repeat: repeat-y;
-margin:0px; 
 padding:20px;
 text-align: center;
 }
@@ -31,7 +30,7 @@ text-align: center;
     src: url('blog/app/assets/Strange.ttf'); 
 }
 
-textenhance {
+.textenhance {
 color:white;
 text-shadow: 2px 2px 4px #000000;
 }
@@ -97,7 +96,7 @@ th {
 }
 
 
-#back {
+.back {
  background-image: url(back.png);  
     display:block;
     height:50px;
@@ -105,14 +104,14 @@ th {
 }
 
 
-#edit {
+.edit {
  background-image: url(edit.png);  
     display:block;
     height:50px;
     width:50px;
 }
 
-#show {
+.show {
  background-image: url(show.png);  
     display:block;
     height:50px;
@@ -138,9 +137,10 @@ th {
     width:100px;
 }
 
-#destroy {
+.destroy {
  background-image: url(destroy.png);  
     display:block;
     height:50px;
     width:50px;
+    opacity:0.5;
 }

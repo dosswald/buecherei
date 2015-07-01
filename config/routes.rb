@@ -8,9 +8,10 @@ Rails.application.routes.draw do
   get 'borrowings/index'
   get 'books/index'
   get 'copies/index'
+  get 'copies/show'
   get 'books/_form'
 root 'books#index'
-    
+  
 resources :home    
 
 resources :customers do

@@ -21,10 +21,10 @@
   <td><%= book.id %></td>
   <td><%= book.title %></td>
   <td><%= book.author %></td>
-  <td><%= book.publisher %></td>
-  <td><%= book.genre %></td>
-  <td><%= link_to '', book_copies_path(book) , :class=>'a' ,:id=>'show' %></td>
-  <td><%= link_to '', book_path(book), method: :delete, data: { confirm: 'Are you sure?' }, :id=>'destroy' %></td>
+  <td><%= book.publisher.name %></td>
+  <td><%= book.genre.name %></td>
+  <td><%= link_to '', book_copies_path(book) , :class=>'a show'%></td>
+  <td><%= link_to '', book_path(book), method: :delete, :class=>'destroy a', data: { confirm: 'Are you sure?' } %></td>
  </tr>
 
 <% end %>

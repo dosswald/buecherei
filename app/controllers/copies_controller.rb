@@ -7,4 +7,14 @@ class CopiesController < ApplicationController
     end
 
   end
+    
+def show
+    if params['borrowing_id']
+	@copies = Copy.where(borrowing_id: params['borrowing_id']).all
+    else
+	@copies = Copy.all
+    end
+
+  end
+    
 end
